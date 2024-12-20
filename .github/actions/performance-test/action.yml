@@ -1,1 +1,7 @@
 # add your code here.
+name: 'Performance Test'
+description: 'Run performance tests for the Dockerized application'
+
+runs:
+  using: 'docker'
+  image: 'app.dockerfile'
