@@ -19,7 +19,7 @@ jobs:
       run: docker build -t dsurovets-python-flask-app -f app.dockerfile .
     # Step 4: Scan Docker image with Trivy
     - name: Scan Docker image for vulnerabilities
-      uses: aquasecurity/trivy-action@v0.11.3
+      uses: aquasecurity/trivy-action@master
       with:
         image-ref: dsurovets-python-flask-app
         format: table
